@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}ACCUEIL{% endblock %}</title>
+        <link rel="stylesheet" href="https://bootswatch.com/5/solar/bootstrap.css">
+        <meta name="viewport" content="width=device-width" />
+
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Accueil</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor03">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/cv">CV
+            <span class="visually-hidden"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/mesloisirs">Mes loisirs</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<p>&nbsp;</p>
+<script type="text/javascript">
+<!--
+    alert('Bienvenue');
+//-->
+</script>
+
+<center><div class="card border-primary mb-3" style="max-width: 40rem;"> <!--Permet d'afficher le carré jaune avec mes informations-->
+  <div class="card-header">Maïl Bibimoune</div>
+  <div class="card-body">
+    <h4 class="card-title">Bienvenue sur ma page d'Accueil</h4>
+    <p class="card-text">Vous trouverez ici mon Portfolio, mon Curriculum Vitae ainsi que mes loisirs</p>
+  </div>
+</div></center>
+<center><div class="btn-group-vertical">
+  <a href="/mesloisirs"> <button type="button" class="btn btn-primary">En savoir plus</button></a>
+</div></center>
+<br>
+<center><div class="card text-white bg-info mb-3" style="max-width: 50rem;">
+  <div class="card-header"><strong> Informations personnelles </strong></div>
+  <div class="card-body">
+    <h4 class="card-title">Mon adresse email : mail.bibimoune@etu.univ-st-etienne.fr</h4>
+    <p class="card-text">mon numéro de téléphone : +33669221837</p>
+  </div>
+</div></center>
+        {% block body %}{% endblock %}
+    </body>
+</html>
