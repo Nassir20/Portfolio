@@ -45,5 +45,13 @@ class NailPortfolioController extends AbstractController
     {
         return $this->render('nail_portfolio/mesloisirs.html.twig');
     }
-    
+    /**
+     * @Route("/oral", name="oral")
+     */
+    /** 
+    public function oral(): Response
+    {
+        return $this->render('nail_portfolio/Oral.html.twig');
+    }
+    */
 }
