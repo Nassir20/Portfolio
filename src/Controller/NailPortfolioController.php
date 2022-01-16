@@ -45,4 +45,5 @@ class NailPortfolioController extends AbstractController
     {
         return $this->render('nail_portfolio/mesloisirs.html.twig');
     }
+    
 }
