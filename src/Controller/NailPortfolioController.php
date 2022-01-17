@@ -50,7 +50,6 @@ class NailPortfolioController extends AbstractController
      */
     public function oral(): Response
     {
-        return $this->render('nail_portfolio/Oral.html.twig');
+        return $this->render('nail_portfolio/oral.html.twig');
     }
-    
 }
